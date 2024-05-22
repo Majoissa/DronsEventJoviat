@@ -45,55 +45,55 @@ const FormFields = () => {
     <VStack spacing={4} width={{ base: "90%", md: "60%" }}>
       <FormControl>
         <FormLabel fontFamily={'"Hanken Grotesk", sans-serif'} color={"white"}>
-          Team Name
+          Nom del equip
         </FormLabel>
         <Input
           bg={"white"}
           type="text"
           id="nomEquip"
-          placeholder="Enter your team name"
+          placeholder="Entre el nom del seu equip"
         />
       </FormControl>
       <FormControl>
         <FormLabel fontFamily={'"Hanken Grotesk", sans-serif'} color={"white"}>
-          Participant 1 Name
+          Nom participant 1
         </FormLabel>
         <Input
           bg={"white"}
           type="text"
           id="participant1"
-          placeholder="Enter the name of participant 1"
+          placeholder="Entre el nom del participant 1"
         />
       </FormControl>
       <FormControl>
         <FormLabel fontFamily={'"Hanken Grotesk", sans-serif'} color={"white"}>
-          Participant 2 Name
+          Nom participant 2
         </FormLabel>
         <Input
           bg={"white"}
           type="text"
           id="participant2"
-          placeholder="Enter the name of participant 2"
+          placeholder="Entre el nom del participant 2"
         />
       </FormControl>
       <FormControl>
         <FormLabel fontFamily={'"Hanken Grotesk", sans-serif'} color={"white"}>
-          Email
+          Correu
         </FormLabel>
         <Input
           bg={"white"}
           type="email"
           id="email"
-          placeholder="Enter your email"
+          placeholder="Entre el seu correu"
         />
       </FormControl>
       <FormControl id="dretsImatge">
         <Checkbox fontFamily={'"Hanken Grotesk", sans-serif'} color={"white"}>
-          I accept the image rights terms and conditions
+          Accepto els termes i condicions dels drets d'imatge
         </Checkbox>
       </FormControl>
       <Button colorScheme="blue" onClick={handleSubmit} isLoading={loading}>
-        Submit
+        Enviar
       </Button>
     </VStack>
   );

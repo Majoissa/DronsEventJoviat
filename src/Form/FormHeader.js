@@ -11,7 +11,7 @@ const FormHeader = () => {
       textAlign="center"
       mb={4}
     >
-      Registration Form
+      Inscripcions
     </Heading>
   );
 };
