@@ -92,7 +92,7 @@ const Nav = ({ showList }) => {
                         <a href="#normas">Normas</a>
                       </ListItem>
                       <ListItem p={4}>
-                        <a href="#home">Inscriu-te</a>
+                        <Link to="/registration">Inscriu-te</Link>
                       </ListItem>
                     </UnorderedList>
                   </List>
@@ -149,7 +149,7 @@ const Nav = ({ showList }) => {
                 <a href="#normas">Normas</a>
               </ListItem>
               <ListItem>
-                <a href="#inscriu-te">Inscriu-te</a>
+                <Link to="/registration">Inscriu-te</Link>
               </ListItem>
             </List>
           </>
