@@ -51,7 +51,7 @@ const FormFields = () => {
           bg={"white"}
           type="text"
           id="nomEquip"
-          placeholder="Entre el nom del seu equip"
+          placeholder="Entra el nom del seu equip"
         />
       </FormControl>
       <FormControl>
@@ -62,7 +62,7 @@ const FormFields = () => {
           bg={"white"}
           type="text"
           id="participant1"
-          placeholder="Entre el nom del participant 1"
+          placeholder="Entra el nom del participant 1"
         />
       </FormControl>
       <FormControl>
@@ -73,7 +73,7 @@ const FormFields = () => {
           bg={"white"}
           type="text"
           id="participant2"
-          placeholder="Entre el nom del participant 2"
+          placeholder="Entra el nom del participant 2"
         />
       </FormControl>
       <FormControl>
@@ -84,7 +84,7 @@ const FormFields = () => {
           bg={"white"}
           type="email"
           id="email"
-          placeholder="Entre el seu correu"
+          placeholder="Entra el seu correu"
         />
       </FormControl>
       <FormControl id="dretsImatge">

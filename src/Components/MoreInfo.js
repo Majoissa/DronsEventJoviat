@@ -39,8 +39,7 @@ const MoreInfo = () => {
             size={"xl"}
             textAlign="left"
           >
-            Destinat a alumnes de l'escola Joviat- Grau Superior, mitjà,
-            batxillerat
+            Destinat a tot l'alumnat de joviat
           </Heading>
           <Text
             fontFamily={'"Hanken Grotesk", sans-serif'}

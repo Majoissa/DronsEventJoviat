@@ -32,7 +32,7 @@ const Info = () => {
           size={"xl"}
           textAlign="left"
         >
-          NO ET PERDIS LA PRIMERA COMPETÈNCIA DE DRONS
+          NO ET PERDIS LA PRIMERA COMPETICIÓ DE DRONS
         </Heading>
         <Text
           fontFamily={'"Hanken Grotesk", sans-serif'}

@@ -32,7 +32,7 @@ const Main = () => {
           size={"xl"}
           textAlign="left"
         >
-          EL ESDEVENIMENT DE DRONS DE LA ESCOLA JOVIAT
+          EL ESDEVENIMENT DE DRONS DE L'ESCOLA JOVIAT
         </Heading>
         <Text
           fontFamily={'"Hanken Grotesk", sans-serif'}
@@ -40,7 +40,7 @@ const Main = () => {
           fontSize={"25px"}
           fontWeight={400}
         >
-          Descobreix aquí com inscriure't, els horaris i el lloc de
+          Descobreix aquí com inscriure't, els horaris, el lloc de
           l'esdeveniment, les normatives i moltes coses més
         </Text>
         <Box

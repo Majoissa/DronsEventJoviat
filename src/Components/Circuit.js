@@ -48,7 +48,7 @@ const Circuit = () => {
           fontSize={"25px"}
           fontWeight={"bold"}
         >
-          Sistema de competència:
+          Sistema de competició:
         </Text>
         <Text
           fontFamily={'"Hanken Grotesk", sans-serif'}
