@@ -39,7 +39,7 @@ const MoreInfo = () => {
             size={"xl"}
             textAlign="left"
           >
-            Destinat a tot l'alumnat de joviat
+            Destinat a tot joviat
           </Heading>
           <Text
             fontFamily={'"Hanken Grotesk", sans-serif'}
@@ -48,7 +48,7 @@ const MoreInfo = () => {
             fontWeight={400}
           >
             Requisits per inscriure's: Un dron (opcional), i ser integrant de
-            lEscola Joviat.
+            Joviat.
           </Text>
         </Box>
         <Box display={"flex"} justifyContent={"flex-end"}>
@@ -101,10 +101,9 @@ const MoreInfo = () => {
         width={"70%"}
         textAlign={"justify"}
       >
-        Es comptarà per equip amb el màxim de 2 participants que consta amb 1
-        pilot i un assistent (amb possibilitat de revertir els llocs a la
-        primera i segona ronda o de poder repetir la fórmula, queda a criteri
-        dels integrants del mateix).
+        Equips de 2 participants que consta amb 1 pilot i un assistent (amb
+        possibilitat de revertir els llocs a la primera i segona ronda o de
+        poder repetir la fórmula, queda a criteri dels integrants del mateix).
       </Text>
     </VStack>
   );

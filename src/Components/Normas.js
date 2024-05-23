@@ -23,7 +23,7 @@ const Normas = () => {
         id="normas"
         textAlign={"center"}
       >
-        NORMES DEL ESDEVENIMENT
+        NORMES DE L'ESDEVENIMENT
       </Heading>
       <Box width={"70%"} textAlign={"justify"}>
         <Text
@@ -34,12 +34,12 @@ const Normas = () => {
         >
           Com que és una competició per equips (dos integrants) el pilot pot
           desplaçar-se lliurement pel circuit, el company pot entrar al circuit
-          només en cas de socórrer el dron, sinó s'ha de mantenir per fora del
-          perímetre del circuit. Un cop seleccionat el pilot no es podrà canviar
-          a meitat de la ronda, ha de continuar fins a esgotar-se el temps. Es
-          compta amb 5 minuts per completar el circuit Inicia el temps del
-          comptador quan el pilot rebi el senyal del jutge i el dron enlairament
-          del terra, amb dues maneres d'acabar la participació:
+          només en cas de socórrer el dron, altrament s'ha de mantenir per fora
+          del perímetre del circuit. Un cop seleccionat el pilot no es podrà
+          canviar a meitat de la ronda, ha de continuar fins a esgotar-se el
+          temps. Es compta amb 5 minuts per completar el circuit. S'inicia el
+          temps del comptador quan el pilot rebi el senyal del jutge. Hi han
+          dues maneres d'acabar la participació:
         </Text>
         <List
           fontFamily={'"Hanken Grotesk", sans-serif'}
@@ -114,12 +114,12 @@ const Normas = () => {
               </UnorderedList>
             </ListItem>
             <ListItem>
-              H:{" "}
+              Final:{" "}
               <UnorderedList>
                 <ListItem>Valoració: 2000 pts.</ListItem>
                 <ListItem>
-                  Objectiu en una taula petita el participant haurà de col·locar
-                  el dron, Quan ho aconsegueixi, el temps parés i acabarà la
+                  Objectiu en una taula petita el participant haurà d'aterrar el
+                  dron, Quan ho aconsegueixi, el temps s'aturarà i acabarà la
                   seva participació.
                 </ListItem>
               </UnorderedList>

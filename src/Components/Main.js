@@ -32,7 +32,7 @@ const Main = () => {
           size={"xl"}
           textAlign="left"
         >
-          EL ESDEVENIMENT DE DRONS DE L'ESCOLA JOVIAT
+          L'ESDEVENIMENT DE DRONS DE L'ESCOLA JOVIAT
         </Heading>
         <Text
           fontFamily={'"Hanken Grotesk", sans-serif'}

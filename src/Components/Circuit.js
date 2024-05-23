@@ -30,7 +30,7 @@ const Circuit = () => {
           color={"white"}
           size={"xl"}
         >
-          ON INICIA I ON ACABA?
+          ON S'INICIA I ON ACABA?
         </Heading>
         <Text
           fontFamily={'"Hanken Grotesk", sans-serif'}
@@ -62,7 +62,8 @@ const Circuit = () => {
           circuit però amb la dificultat de la disminució de temps de les rondes
           d'eliminació. L'equip en estar conformat per dos integrants, a la
           primera i segona ronda no és obligatori que s'intercanviïn els llocs
-          (pilot i assistent), això quedés a decisió dels mateixos integrants.
+          (pilot i assistent), això queda a decisió dels mateixos integrants. Un
+          mateix participant no pot ser membre de dos equips.
         </Text>
       </Box>
     </SimpleGrid>

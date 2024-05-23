@@ -21,7 +21,7 @@ const Info = () => {
           size={"2xl"}
           textAlign="left"
         >
-          INFO DEL ESDEVENIMENT
+          INFO DE L'ESDEVENIMENT
         </Heading>
         <Heading
           fontWeight={600}
@@ -43,14 +43,7 @@ const Info = () => {
           El dijous 30 de maig 11:30 hs. Al Pavelló Joviat C/Folch i Torres 5-13
           Manresa 08240
         </Text>
-        <Text
-          fontFamily={'"Hanken Grotesk", sans-serif'}
-          color={"white"}
-          fontSize={"25px"}
-          fontWeight={400}
-        >
-          Un competidor només pot ser part d'un equip, no més d'un
-        </Text>
+
         <Text
           fontFamily={'"Hanken Grotesk", sans-serif'}
           color={"white"}
