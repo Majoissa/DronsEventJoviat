@@ -2,7 +2,7 @@ import { SimpleGrid, Box, Image, Heading, Text } from "@chakra-ui/react";
 import Btn from "./Btn";
 
 const Info = () => {
-  const img = require("./publi.png");
+  const img = require("./publi copy.png");
   return (
     <SimpleGrid
       id="info"
