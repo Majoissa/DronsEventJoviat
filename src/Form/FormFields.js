@@ -30,12 +30,11 @@ const FormFields = () => {
       setLoading(false);
     }
 
-   document.getElementById("nomEquip").value = '';
-   document.getElementById("participant1").value = '';
-   document.getElementById("participant2").value = '';
-   document.getElementById("email").value = '';
-   document.getElementById("dretsImatge").checked = true;
-
+    document.getElementById("nomEquip").value = "";
+    document.getElementById("participant1").value = "";
+    document.getElementById("participant2").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("dretsImatge").checked = true;
   };
 
   const generateFormDataJson = () => {
@@ -45,11 +44,13 @@ const FormFields = () => {
       participant2: document.getElementById("participant2").value,
       email: document.getElementById("email").value,
       dretsImatge: document.getElementById("dretsImatge").checked,
-      inici: '',
-      fi: '',
-      tempsTotal: '',
-      punts: '',
-      ranking: '',
+      inici: "",
+      fi: "",
+      tempsTotal: "",
+      puntsRonda1: "",
+      puntsRonda2: "",
+      puntsTotal: "",
+      ranking: "",
     };
   };
 
