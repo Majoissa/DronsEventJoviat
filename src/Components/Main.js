@@ -18,9 +18,9 @@ const Main = () => {
     <VStack>
       <SimpleGrid
         columns={{ base: 1, xl: 2 }}
-        maxW={"70%"}
+        maxW={{ base: "80%", sm: "70%" }}
         gap={50}
-        pt={{ base: "8rem", lg: "5rem" }}
+        pt={{ base: "5rem", sm: "7rem", lg: "5rem" }}
         textAlign={{ base: "justify", xl: "left" }}
       >
         <Image src={img} alt="logo competencia drones" />
