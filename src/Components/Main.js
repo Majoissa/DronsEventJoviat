@@ -5,6 +5,7 @@ import {
   Heading,
   Text,
   VStack,
+  AspectRatio,
 } from "@chakra-ui/react";
 import YouTube from "react-youtube";
 import Btn from "./Btn";
@@ -66,18 +67,14 @@ const Main = () => {
       </SimpleGrid>
       <Box
         mt={50}
-        maxW={"100%"}
+        width={{ base: "100%", md: "80%", lg: "60%" }}
         display={"flex"}
         justifyContent={"center"}
         alignItems={"center"}
       >
-        <Box
-          width={{ base: "100%", md: "80%", lg: "60%" }}
-          display={"flex"}
-          justifyContent={"center"}
-        >
+        <AspectRatio width="100%" ratio={16 / 9}>
           <YouTube videoId={videoId} />
-        </Box>
+        </AspectRatio>
       </Box>
     </VStack>
   );
