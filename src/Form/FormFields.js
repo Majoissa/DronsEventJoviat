@@ -48,7 +48,9 @@ const FormFields = () => {
       inici: '',
       fi: '',
       tempsTotal: '',
-      punts: '',
+      puntsRonda1: '',
+      puntsRonda2: '',
+      puntsTotal: '',
       ranking: '',
     };
   };

@@ -20,6 +20,7 @@ import {
   query,
   orderBy,
   getDocs,
+  onSnapshot,
 } from "firebase/firestore";
 import app from "../firebaseConfig";
 import logo from "./Joviat_Dron.png";
@@ -30,27 +31,32 @@ import Nav from "./Nav/Nav";
 
 const Results = () => {
   const [teams, setTeams] = useState([]);
-
   useEffect(() => {
     const fetchTeams = async () => {
       const db = getFirestore(app);
-      const teamsCollection = collection(db, "equipos");
-      const teamsQuery = query(teamsCollection, orderBy("Tiempo Fin"));
-      const querySnapshot = await getDocs(teamsQuery);
-      const teamsData = querySnapshot.docs.map((doc) => {
-        const data = doc.data();
-        const inicio = new Date(data["Tiempo Inicio"]);
-        const fin = new Date(data["Tiempo Fin"]);
-        const tiempoTotal = (fin - inicio) / 1000;
-        return {
-          nombre: data.Equipo.nombre,
-          inicio: inicio.toLocaleTimeString(),
-          fin: fin.toLocaleTimeString(),
-          tiempoTotal,
-          puntos: data.Diferencial,
-        };
+      const teamsCollection = collection(db, "provaEquips");
+      const teamsQuery = query(teamsCollection, orderBy("ranking"));
+
+      onSnapshot(teamsQuery, (querySnapshot) => {
+        const teamsData = querySnapshot.docs.map((doc) => {
+          const data = doc.data();
+          const inicio = data["inici"] ? new Date(data["inici"]) : null;
+          const fin = data["fi"] ? new Date(data["fi"]) : null;
+          const tiempoTotal = inicio && fin ? (fin - inicio) / 1000 : '-';
+          
+          return {
+            nombre: data.nomEquip || '-',
+            inicio: inicio ? inicio.toLocaleTimeString() : '-',
+            fin: fin ? fin.toLocaleTimeString() : '-',
+            tiempoTotal: !isNaN(tiempoTotal) && tiempoTotal !== null ? tiempoTotal : '-',
+            puntos1: data.puntsRonda1 || '0',
+            puntos2: data.puntsRonda2 || '0',
+            puntosTotal: data.puntsTotal,
+            ranking: data.ranking || '-'
+          };
+        });
+        setTeams(teamsData);
       });
-      setTeams(teamsData);
     };
 
     fetchTeams();
@@ -69,7 +75,7 @@ const Results = () => {
             size={"2xl"}
             textAlign="center"
           >
-            Resultats del Esdeveniment
+            Resultats de l' Esdeveniment
           </Heading>
           <TableContainer borderRadius={15} bg="#95959e" width={"80%"}>
             <Table
@@ -82,7 +88,10 @@ const Results = () => {
                   <Th>Inicio</Th>
                   <Th>Fin</Th>
                   <Th isNumeric>Tiempo (s)</Th>
-                  <Th isNumeric>Puntos</Th>
+                  <Th isNumeric>Puntos R.1</Th>
+                  <Th isNumeric>Puntos R.2</Th>
+                  <Th isNumeric>Total</Th>
+                  <Th isNumeric>Ranking</Th>
                 </Tr>
               </Thead>
               <Tbody>
@@ -92,7 +101,10 @@ const Results = () => {
                     <Td>{team.inicio}</Td>
                     <Td>{team.fin}</Td>
                     <Td isNumeric>{team.tiempoTotal}</Td>
-                    <Td isNumeric>{team.puntos}</Td>
+                    <Td isNumeric>{team.puntos1}</Td>
+                    <Td isNumeric>{team.puntos2}</Td>
+                    <Td isNumeric>{team.puntosTotal}</Td>
+                    <Td isNumeric>{team.ranking}</Td>
                   </Tr>
                 ))}
               </Tbody>
