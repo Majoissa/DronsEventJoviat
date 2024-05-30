@@ -77,34 +77,34 @@ const Results = () => {
           >
             Resultats de l' Esdeveniment
           </Heading>
-          <TableContainer borderRadius={15} bg="#95959e" width={"80%"}>
+          <TableContainer borderRadius={15} bg="#95959e" width={"95%"}>
             <Table
               variant="striped"
               fontFamily={'"Hanken Grotesk", sans-serif'}
             >
               <Thead>
-                <Tr>
-                  <Th>Equipo</Th>
-                  <Th>Inicio</Th>
-                  <Th>Fin</Th>
-                  <Th isNumeric>Tiempo (s)</Th>
-                  <Th isNumeric>Puntos R.1</Th>
-                  <Th isNumeric>Puntos R.2</Th>
-                  <Th isNumeric>Total</Th>
-                  <Th isNumeric>Ranking</Th>
+                <Tr >
+                  <Th fontSize="18px" p={15}>Equipo</Th>
+                  <Th fontSize="18px" p={15}>Inicio</Th>
+                  <Th fontSize="18px" p={15}>Fin</Th>
+                  <Th isNumeric fontSize="18px" p={15}>Tiempo (s)</Th>
+                  <Th isNumeric fontSize="18px" p={15}>Puntos R.1</Th>
+                  <Th isNumeric fontSize="18px" p={15}>Puntos R.2</Th>
+                  <Th isNumeric fontSize="18px" p={15}>Total</Th>
+                  <Th isNumeric fontSize="18px" p={15}>Ranking</Th>
                 </Tr>
               </Thead>
               <Tbody>
                 {teams.map((team) => (
                   <Tr key={team.nombre}>
-                    <Td>{team.nombre}</Td>
-                    <Td>{team.inicio}</Td>
-                    <Td>{team.fin}</Td>
-                    <Td isNumeric>{team.tiempoTotal}</Td>
-                    <Td isNumeric>{team.puntos1}</Td>
-                    <Td isNumeric>{team.puntos2}</Td>
-                    <Td isNumeric>{team.puntosTotal}</Td>
-                    <Td isNumeric>{team.ranking}</Td>
+                    <Td fontSize="16px">{team.nombre}</Td>
+                    <Td fontSize="16px">{team.inicio}</Td>
+                    <Td fontSize="16px">{team.fin}</Td>
+                    <Td fontSize="16px" isNumeric>{team.tiempoTotal}</Td>
+                    <Td fontSize="16px"isNumeric>{team.puntos1}</Td>
+                    <Td fontSize="16px" isNumeric>{team.puntos2}</Td>
+                    <Td fontSize="16px" isNumeric>{team.puntosTotal}</Td>
+                    <Td fontSize="16px" isNumeric>{team.ranking}</Td>
                   </Tr>
                 ))}
               </Tbody>
