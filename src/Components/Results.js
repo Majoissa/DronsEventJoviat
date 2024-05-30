@@ -110,15 +110,6 @@ const Results = () => {
               </Tbody>
             </Table>
           </TableContainer>
-          <Button as={Link} to="/round1" colorScheme="red">
-            Top 3 Ranking Primera Ronda
-          </Button>
-          <Button as={Link} to="/round2" colorScheme="red">
-            Top 3 Ranking Segunda Ronda
-          </Button>
-          <Button as={Link} to="/final-round" colorScheme="red">
-            Guanyadors
-          </Button>
         </VStack>
       </Box>
     </Box>
